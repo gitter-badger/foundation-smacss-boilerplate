@@ -1,0 +1,19 @@
+{
+  "name": "jdltechworks",
+  "version": "1.0.0",
+  "description": "JDLtechworks Boilerplate",
+  "main": "index.html",
+  "dependencies": {
+    "foundation-sites": "^6.1.2",
+    "wow": "https://github.com/matthieua/WOW/archive/1.1.2.tar.gz"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-jshint": "^0.12.0"
+  },
+  "scripts": {
+    "test": "ls"
+  },
+  "author": "",
+  "license": "ISC"
+}

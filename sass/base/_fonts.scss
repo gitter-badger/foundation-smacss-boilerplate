@@ -1,0 +1,63 @@
+@mixin font-face($style-name, $file, $family, $category: "") {
+  $filepath: "../fonts/" + $family + "/" + $file;
+  @font-face {
+    font-family: #{$style-name};
+    src: url($filepath + ".eot");
+    src: url($filepath + ".eot?#iefix") format("embedded-opentype"), url($filepath + ".woff") format("woff"), url($filepath + ".ttf") format("truetype"), url($filepath + ".svg#" + $style-name + "") format("svg");
+  }
+
+  %#{$style-name} {
+    font: {
+      @if $category != "" {
+        family: #{$style-name}, #{$category};
+      }
+      @else {
+        family: #{$style-name};
+        weight: normal;
+      }
+    };
+  }
+}
+
+/**
+ * Declaring fonts
+ *
+ */
+
+ //Lato Bold
+@include font-face(Lato Bold, Lato-Bold, lato);
+
+//Lato Regular
+@include font-face(Lato Regular, Lato-Regular, lato);
+
+
+//Font Awesome
+@include font-face(FontAwesome, fontawesome-webfont, fontawesome);
+
+//OpenSans Regular
+@include font-face(OpenSans Regular, opensans-regular-webfont, opensans);
+
+//OpenSans Light
+@include font-face(OpenSans Light, opensans-light-webfont, opensans);
+
+//OpenSans SemiBold
+@include font-face(OpenSans SemiBold, opensans-semibold-webfont, opensans);
+
+//Proxima Nova Regular
+@include font-face(Proxima Nova Light, proximanova-light-webfont, proximanova);
+
+
+//Proxima Nova Regular
+@include font-face(Proxima Nova Regular, proximanova-regular-webfont, proximanova);
+
+//Proxima Nova Bold
+@include font-face(Proxima Nova Bold, proximanova-bold-webfont, proximanova);
+
+//Proxima Nova SemiBold
+@include font-face(Proxima Nova SemiBold, proximanova-semibold-webfont, proximanova);
+
+
+//Proxima Nova Condenesed 
+@include font-face(Proxima Nova Condenesed SemiBold, proximanovacond-semibold-webfont, proximanova);
+
+
