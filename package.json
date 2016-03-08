@@ -5,6 +5,8 @@
   "main": "index.html",
   "dependencies": {
     "foundation-sites": "^6.1.2",
+    "jquery": "^2.2.1",
+    "motion-ui": "^1.2.2",
     "wow": "https://github.com/matthieua/WOW/archive/1.1.2.tar.gz"
   },
   "devDependencies": {
